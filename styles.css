@@ -1,0 +1,107 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #232f3e;
+    color: #fff;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header .search-bar {
+    display: flex;
+}
+
+header .search-bar input {
+    padding: 5px;
+    border: none;
+    width: 300px;
+    border-radius: 4px;
+}
+
+header .search-bar button {
+    padding: 5px 10px;
+    background-color: #f0c14b;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+header .cart a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.categories {
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.category-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.category {
+    flex: 1;
+    padding: 20px;
+    background-color: #eaeaea;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category:hover {
+    background-color: #ccc;
+}
+
+.featured-products {
+    padding: 20px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    flex: 1 1 calc(25% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 20px;
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+}

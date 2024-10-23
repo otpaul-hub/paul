@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="/paul/pp.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ShopEase</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search products...">
+            <button onclick="searchProducts()">Search</button>
+             <a href="/paul/home.html">Home</a>
+        </div>
+    </header>
+
+    <div class="filter">
+        <label for="category">Category: </label>
+        <select id="category" onchange="filterProducts()">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="home">Home & Kitchen</option>
+        </select>
+    </div>
+
+    <div class="products" id="product-list">
+        <!-- Products will be dynamically displayed here -->
+    </div>
+
+    <footer>
+        <p>© 2024 ShopEase. All rights reserved.</p>
+    </footer>
+
+    <script src="/paul/pp.js"></script>
+</body>
+</html>

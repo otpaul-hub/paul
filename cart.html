@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="/paul/cart.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Cart</h1>
+        <div id="cartItems">
+            <div class="cart-item">
+                <div class="item-info">
+                    <h3>Product Title</h3>
+                    <p>Price: $29.99</p>
+                </div>
+                <div class="quantity-adjustment">
+                    <button class="decrease">-</button>
+                    <input type="number" value="1" class="quantity" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="remove">Remove</button>
+                <a href="/amazon/checkout.html">buy now</a>
+            </div>
+            <div class="cart-item">
+                <div class="item-info">
+                    <h3>Another Product</h3>
+                    <p>Price: $19.99</p>
+                </div>
+                <div class="quantity-adjustment">
+                    <button class="decrease">-</button>
+                    <input type="number" value="1" class="quantity" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="remove">Remove</button>
+                <a href="/paul/checkout.html">buy now</a>
+            </div>
+        </div>
+
+        <div class="total-price">
+            <h3>Total: $49.98</h3>
+            <button id="checkoutBtn">Submit</button>
+        </div>
+    </div>
+    <script src="/paul/cart.js"></script>
+</body>
+</html>

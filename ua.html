@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account</title>
+    <link rel="stylesheet" href="/paul/ua.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User Account</h2>
+        <nav>
+            <ul>
+                <li><a href="#order-history" class="active">Order History</a></li>
+                <li><a href="#profile-settings">Profile Settings</a></li>
+                <li><a href="#address-book">Address Book</a></li>
+            </ul>
+        </nav>
+
+        <div id="order-history" class="tab-content">
+            <h3>Order History</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>2024-01-15</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>2024-02-10</td>
+                        <td>Shipped</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="profile-settings" class="tab-content" style="display: none;">
+            <h3>Profile Settings</h3>
+            <form id="profileForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <button type="submit">Update Profile</button>
+                <p id="profileMessage" class="message"></p>
+            </form>
+        </div>
+
+        <div id="address-book" class="tab-content" style="display: none;">
+            <h3>Address Book</h3>
+            <form id="addressForm">
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="state" placeholder="State" required>
+                <input type="text" id="zip" placeholder="Zip Code" required>
+                <button type="submit">Add Address</button>
+                <p id="addressMessage" class="message"></p>
+            </form>
+            <h4>Saved Addresses</h4>
+            <ul id="savedAddresses"></ul>
+        </div>
+    </div>
+
+    <script src="/paul/ua.js"></script>
+</body>
+</html>

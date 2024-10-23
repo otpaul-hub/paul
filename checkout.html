@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <style>
+        form {
+            width: 300px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Checkout</h2>
+    <form id="checkoutForm">
+        <h3>Shipping Address</h3>
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="text" id="address" placeholder="Address" required>
+        <input type="text" id="city" placeholder="City" required>
+        <input type="text" id="state" placeholder="State" required>
+        <input type="text" id="zip" placeholder="Zip Code" required>
+
+        <h3>Payment Details</h3>
+        <input type="text" id="cardNumber" placeholder="Card Number" maxlength="16" required>
+        <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5" required>
+        <input type="text" id="cvv" placeholder="CVV" maxlength="3" required>
+
+        <button type="submit">Pay Now</button>
+        <p id="errorMessage" class="error"></p>
+    </form>
+
+    <script src="/paul/checkout.js"></script>
+</body>
+</html>

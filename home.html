@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic E-Commerce Home Page</title>
+    <link rel="stylesheet" href="/paul/styles.css">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <div class="logo">
+            <h1>Your Store</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for products...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+        <div class="cart">
+            <a href="/amazon/cart.html">Cart</a>
+            <a href="/amazon/pp.html">Products</a>
+            <a href="/amazon/ua.html">Your info</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Carousel Slider -->
+        <section class="carousel">
+            <div class="slides">
+                <img src="img/slide1.jpg" alt="Promo 1">
+                <img src="img/slide2.jpg" alt="Promo 2">
+                <img src="img/slide3.jpg" alt="Promo 3">
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <h2>Shop by Categories</h2>
+            <div class="category-grid">
+                <div class="category">Electronics</div>
+                <div class="category">Fashion</div>
+                <div class="category">Home Appliances</div>
+                <div class="category">Toys & Games</div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div id="product-grid" class="product-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Store - All Rights Reserved</p>
+    </footer>
+
+    <script src="/paul/script.js"></script>
+</body>
+</html>
